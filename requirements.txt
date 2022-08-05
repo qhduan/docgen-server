@@ -1,0 +1,5 @@
+onnxruntime
+transformers
+numpy
+fastapi
+uvicorn[standard]
