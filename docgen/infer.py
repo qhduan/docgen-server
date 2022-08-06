@@ -43,7 +43,7 @@ def predict(model, pkv_init, context, max_length=128):
         input_ids = [token]
         output_tokens.append(token)
         attention_mask.append(1.0)
-        if tokenizer.decode(output_tokens).endswith('"""'):
+        if tokenizer.decode(output_tokens).endswith('*/'):
             break
     return tokenizer.decode(output_tokens)
 
