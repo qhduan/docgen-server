@@ -55,9 +55,9 @@ def infer(context, pkv_name=None):
 
 current_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 tokenizer = AutoTokenizer.from_pretrained(os.path.join(current_dir, 'models/tokenizer'))
-onnx_model = create_model_for_provider(os.path.join(current_dir, 'models/python_docgen.quant.onnx'))
+onnx_model = create_model_for_provider(os.path.join(current_dir, 'models/javascript_docgen.quant.onnx'))
 pkvs = {
-    'google': np.load(os.path.join(current_dir, 'models/python_pkv_google.npy')),
-    'google_cn': np.load(os.path.join(current_dir, 'models/python_pkv_google.npy')),
-    'default': np.load(os.path.join(current_dir, 'models/python_pkv_endoftext.npy')),
+    'google': np.load(os.path.join(current_dir, 'models/javascript_pkv_google.npy')),
+    'google_cn': np.load(os.path.join(current_dir, 'models/javascript_pkv_google.npy')),
+    'default': np.load(os.path.join(current_dir, 'models/javascript_pkv_endoftext.npy')),
 }

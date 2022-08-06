@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t qhduan/docgen:python .
+docker build -t qhduan/docgen:javascript .
